@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .navbar {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .heading {
+    position: absolute;
+    left: 0;
+  }
+  
+  .navbar-links {
+    display: flex;
+    column-gap: 3rem;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+    color: #ffa500;
+  }
+  
+  #header {
+    background-color: #ffd280;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .message {
+    font-size: 1.5rem;
+  }
+  
+  span {
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .header-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .header-button:hover {
+    transform: scale(1.05);
+    color: #ffa500;
+  }
+  
+  .header-image {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-image:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  #services {
+    min-height: 100vh;
+  }
+  
+  .services-conainer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .service-container-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .service-container-2 div {
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    max-width: 40vw;
+    min-height: 20vh;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .header-image {
+      display: none;
+    }
+  
+    .services-conainer-1 {
+      display: block;
+    }
+  }
